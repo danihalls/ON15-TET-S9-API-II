@@ -1,5 +1,4 @@
-
-const controller = require("../controllers/filmesController");
+const controller = require("../controllers/seriesController");
 
 const express = require("express");
 
@@ -19,7 +18,7 @@ router.get("/filtro", controller.getByTitle);
 router.get("/genero", controller.getByGenre);
 
 
-router.post("/cadastrar", controller.createMovie);
+router.post("/cadastrar", controller.createSerie);
 
 
 router.delete("/delete/:id", controller.deleteByID);
